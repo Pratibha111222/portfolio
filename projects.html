@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects - My Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    /* General reset and layout setup */
+    html, body {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      font-family: Arial, sans-serif;
+      color: #333;
+    }
+
+    /* Header styling */
+    header {
+      background-color: #333;
+      padding: 10px 20px;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+      padding: 8px 15px;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+    }
+
+    nav a:hover {
+      background-color: #555;
+    }
+
+    nav a.active {
+      background-color: #007bff;
+      color: #fff;
+    }
+
+    /* Main content styling */
+    main {
+      flex: 1;
+      padding: 20px;
+      background-color: #f4f4f4;
+    }
+
+    section {
+      max-width: 1200px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 30px;
+      color: #007bff;
+    }
+
+    /* Project list styling */
+    .project-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+
+    .project {
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      width: calc(50% - 20px);
+      text-align: left;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .project:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+    }
+
+    .project h2 {
+      font-size: 1.5rem;
+      color: #007bff;
+      margin-bottom: 10px;
+    }
+
+    .project p {
+      font-size: 1rem;
+      line-height: 1.6;
+      color: #555;
+    }
+
+    .project a {
+      text-decoration: none;
+      color: #007bff;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+
+    .project a:hover {
+      color: #0056b3;
+    }
+
+    /* Footer styling */
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #333;
+      color: #fff;
+      font-size: 0.9rem;
+      margin-top: auto;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      .project {
+        width: 100%;
+      }
+
+      nav {
+        flex-wrap: wrap;
+        gap: 10px;
+      }
+
+      h1 {
+        font-size: 2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="projects.html" class="active">Projects</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h1>My Projects</h1>
+      <div class="project-list">
+        <div class="project">
+          <h2>E-commerce Website</h2>
+          <p>
+            A responsive and user-friendly e-commerce platform designed for small businesses to showcase their products. The platform includes features like a shopping cart, secure payment gateway integration, and a comprehensive admin panel for inventory management.
+            <a href="https://github.com/Pratibha111222/FlipKart" target="_blank">View on GitHub</a>
+            
+          </p>
+        </div>
+        <div class="project">
+          <h2>Online Job Portal</h2>
+          <p>
+            A dynamic web application that connects job seekers with employers. The portal includes features like user authentication, job listings, resume uploads, and application tracking. 
+            <a href="https://github.com/Pratibha111222/job-portal" target="_blank">View on GitHub</a>
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 My Portfolio. All Rights Reserved.</p>
+  </footer>
+</body>
+</html>
